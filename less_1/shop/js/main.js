@@ -1,11 +1,11 @@
 const products = [
-    {id: 4, title: 'Shirt', price: 150},
-    {id: 4, title: 'Socks', price: 50},
-    {id: 4, title: 'Jacket', price: 350},
-    {id: 4, title: 'Shoes', price: 250}
+    {id: 4, title: 'Shirt', price: 150, img: 'https://dummyimage.com/150x150/edba91/242424.png&text=Shirt'},
+    {id: 4, title: 'Socks', price: 50, img: 'https://dummyimage.com/150x150/edba91/242424.png&text=Socks'},
+    {id: 4, title: 'Jacket', price: 350, img: 'https://dummyimage.com/150x150/edba91/242424.png&text=Jacket'},
+    {id: 4, title: 'Shoes', price: 250, img: 'https://dummyimage.com/150x150/edba91/242424.png&text=Shoes'}
 ];
 
-const renderProduct = (title, price, img = 'https://dummyimage.com/150x150/edba91/242424.png&text=GeekBrains') => {
+const renderProduct = (title, price, img) => {
     return `<div class="product">
         <img src="${img}" alt="product_image">
         <h3>${title}
@@ -15,14 +15,10 @@ const renderProduct = (title, price, img = 'https://dummyimage.com/150x150/edba9
 };
 
 const renderProducts = list => {
-    /* Метод map() создаёт новый массив, состоящий из результатов вызова
-    * callback(item, i, arr) для каждого элемента
-    */
-    let productList = list.map(item => renderProduct(item.title, item.price));
-    // Запятая выводится из-за того, что мы помещаем в HTML целый массив, а его
-    // элементы разделены запятой.
-    // TODO: преобразовать массив в строку
+    let productList = list.map(item => renderProduct(item.title, item.price, item.img));
     document.querySelector('.products').innerHTML = productList.join("\n");
 };
 
 renderProducts(products);
+
+// Запятая выводится из-за того, что мы помещаем в HTML целый массив, а его элементы разделены запятой.

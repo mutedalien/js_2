@@ -27,7 +27,7 @@ class ProductList {
 }
 
 class ProductItem {
-    constructor(product, img) {
+    constructor(product) {
         this.title = product.title;
         this.price = product.price;
         this.id = product.id;

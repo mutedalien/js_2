@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Indie+Flower&display=swap');
+
+
+label {
+  display: inline;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.text-light {
+  font-family: 'Caveat', cursive;
+  color: orange !important;
+}
+
+.text-warning {
+  font-family: 'Caveat', cursive;
+  color: #28a745 !important;
+}
+
+.form_box {
+  opacity: .8;
+  padding: 1.2rem;
+  background: orange;
+  font-size: 1.1rem;
+}
+.form_box form {
+  display: flex;
+  flex-direction: column;
+}
+.form_box button  {
+  align-self: flex-end;
+  margin-right: 1.6rem;
+  margin-bottom: .5rem;
+
+  width: 10rem;
+  z-index: 2;
+}
+
+.label {
+  width: 120px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+.total div {
+  padding: 0 1.5rem 0 1rem;
+}
+
+.footer {
+  font-family: 'Caveat', cursive;
+}

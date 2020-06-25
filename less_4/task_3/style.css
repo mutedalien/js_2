@@ -1,0 +1,24 @@
+body{
+    padding: 20px;
+}
+.userdata{
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 500px;
+}
+.inputfield{
+    margin: 10px 0px;
+    padding: 5px;
+}
+.errclass{
+    padding-left: 10px;
+    color: red;
+    display: inline-block;
+    font-size: 12px;
+}
+.redBorder{
+    border: 1px solid red;
+}
+.hidden{
+    display: none;
+}

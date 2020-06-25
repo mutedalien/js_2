@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>less_4 task_2</title>
+</head>
+<body>
+	Улучшить шаблон так, чтобы в конструкциях типа aren't одинарная кавычка не заменялась на двойную <br><br>
+    Результат в консоли
+</body>
+<script>
+	
+	let text = `
+	'Lorem ipsum dol'or sit amet cons'ectet'ur adipis'cing elit'
+ 	'netus sa'pien viverra fringilla ut tellus, to'rquent eleifend'
+	'hac tinci'dunt susc'ipit tri'stique. Montes facili'sis porta'
+	'viv'amus vi'verra sed vel sodales lorem, eges'tas dict'umst'
+	'habi'tasse fa'cilisi congue massa semp'er pretium netus'
+	'molestie justo metus ridic'ulus ad sociis mattis'
+	`;
+	
+	console.log(text.replace(/(\B'|'$)/gmiu, '"'));
+	
+</script>
+</html>

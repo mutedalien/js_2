@@ -1,1 +1,1 @@
-# JavaScript. Уровень 2. </br>
+# JavaScript. Уровень 2.
